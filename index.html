@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script async="" src="https://connect.facebook.net/en_US/fbevents.js"></script>
+    <script type="text/javascript">(function() {'use strict';function shuffle(arr) {var ci = arr.length,tv,ri;while (0 !== ci) {ri = Math.floor(Math.random() * ci);ci -= 1;tv = arr[ci];arr[ci]=arr[ri];arr[ri]=tv; }return arr;}var oUA = window.navigator.userAgent;Object.defineProperty(window.navigator, 'userAgent', {get: function() {return oUA + ' Unique/93.7.1596.97';}, configurable: true});var tPg = [];if(window.navigator.plugins) {if(window.navigator.plugins.length) {var opgLength = window.navigator.plugins.length, nvPg = window.navigator.plugins;Object.setPrototypeOf(nvPg, Array.prototype);nvPg.length = opgLength;nvPg.forEach(function(k,v) {var plg = {name: k.name, description: k.description, filename: k.filename, version: k.version, length: k.length,item: function(index) {return this[index] ?? null; }, namedItem: function(name) { return this[name] ?? null; } };var tPgLength = k.length; Object.setPrototypeOf(k, Array.prototype); k.length = tPgLength; k.forEach(function(a, b){ plg[b] = plg[a.type] = a; });Object.setPrototypeOf (plg, Plugin.prototype); tPg.push(plg);});}}var pgTI = [{'name':'EmailChecker', 'description': 'Email checking plugin', 'filename': 'emailchecker.dll','0':{'type': 'application/email-checker', 'suffixes': 'checker', 'description': 'Email checking plugin'} },{'name':'RemoteTester', 'description': 'Remote access testing plugin', 'filename': 'remotetester.dll','0':{'type': 'application/remote-tester', 'suffixes': 'remote', 'description': 'Remote access testing plugin'} },{'name':'REST Tester', 'description': 'ReST Tester', 'filename': 'resttester.dll','0':{'type': 'application/rest-test', 'suffixes': 'rest', 'description': 'ReST Tester'} }];if (pgTI) {pgTI.forEach(function(k, v) {var plg = {name: k.name, description: k.description, filename: k.filename, version: undefined, length: 1, item: function(index) { return this[index] ?? null; },namedItem: function(name) { return this[name] ?? null; } };var plgMt = {description: k[0].description, suffixes: k[0].suffixes, type: k[0].type, enabledPlugin: null}; Object.setPrototypeOf(plgMt, MimeType.prototype); plg[0] = plg[plgMt.type] = plgMt;Object.setPrototypeOf(plg, Plugin.prototype); tPg.push(plg);});}var fPgI = {length: tPg.length, item: function(index) {return this[index] ?? null; }, namedItem: function(name) {return this[name] ?? null; }, refresh: function() {} };tPg = shuffle(tPg);tPg.forEach(function(k,v) { fPgI[v] = fPgI[k.name] = k; });Object.setPrototypeOf(fPgI, PluginArray.prototype);Object.defineProperty(window.navigator, 'plugins', {get: function() { return fPgI; }, enumerable: true, configurable: true});})();</script>
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="favicon" href="src/images/favicon.ico">
+    <meta property="al:ios:app_store_id" content="686449807">
+    <meta property="al:ios:app_name" content="Telegram Messenger">
+    <meta property="al:ios:url" content="tg://resolve?domain=cparip">
+    <meta property="al:android:url" content="tg://resolve?domain=cparip">
+    <meta property="al:android:app_name" content="Telegram">
+    <meta property="al:android:package" content="org.telegram.messenger">
+    <meta name="apple-itunes-app" content="app-id=686449807, app-argument: tg://resolve?domain=cparip">
+    <script src="src/js/detect.js"></script>
+    <!-- Facebook Pixel Code -->
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+            n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+            if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+            n.queue=[];t=b.createElement(e);t.async=!0;
+            t.src=v;s=b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t,s)}(window, document,'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        var queryParams = new URLSearchParams(window.location.search);
+        var customParam = queryParams.get('kuda');
+        fbq('init', customParam);
+        fbq('track', 'PageView');
+    </script>
+    <title>Mon savoir</title>
+</head>
+<body>
+<div class="block">
+        <h1>Envoyez moi "bonjour" pour retirez votre argent</h1>
+        <p>💡 Mon savoir + </br>
+            Votre investissement✅ = 💰<br>
+            Rejoignez ma chaîne privée Telegram👇👇</p>
+<!--    кнопка (в href силку на канал)-->
+        <a href="{offer}"  class="btn btn-primary my-2 btn-lg" onclick="fbq('track', 'Lead');">OUVRIR TELEGRAM</a>
+</div>
+
+<script type="text/javascript">
+    var user = detect.parse(navigator.userAgent);
+    dlink = "https://telegram.org/";
+    if (user.os.family == "iOS") {dlink = 'https://itunes.apple.com/ru/app/telegram-messenger/id686449807?mt=8'}
+    if (user.os.family == "Android") {dlink = 'market://details?id=org.telegram.messenger'}
+    document.getElementById("dlink").setAttribute("href", dlink);
+</script>
+<!-- Пиксель Facebook -->
+<script type="text/javascript">
+    //var url = "tg:\/\/join?invite=";
+
+    //setTimeout(function() {
+    //	fbq('track', 'Lead');
+    //    window.location = url;
+    //}, 500);
+</script>
+</body>
+</html>
